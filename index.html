@@ -1,13 +1,41 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Ellenay
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<section id="feature">
+    <h1>Fife Software Specialists</h1>
+    <h2>At <em>ellenay</em>, we do things a little different.</h2>
+</section>
+
+<section id="main">
+    <article class='devices'>
+        <div class='left'>
+            <h3>Developing for devices first</h3>
+            <p>Using the latest technologies and standards, our websites look good and work well on desktop computers, modern smartphones and tablets.</p>
+            <p>Our sites respond to screen dimension changes and re-align content accordingly.</p>
+        </div>
+        <div class='right'>
+            <img src='/assets/img/platforms.jpg' class='fluid'>
+        </div>
+    </article>
+    <article class='hosting'>
+        <div class='left'>
+            <img src='/assets/img/amazon-web-services.jpg' class='fluid'>
+        </div>
+        <div class='right'>
+            <h3>The Ultimate Cloud Hosting</h3>
+            <p>We only use the best archetecture to power our apps and websites. From the beginning, we plan to scale for events such as high volumes of traffic and large storage demands. <em>'If you build it, they will come'</em> - and we make sure you will be ready!</p>
+        </div>
+    </article>
+    <article class='technology'>
+        <div class='left'>
+            <img src='/assets/img/css3.jpg'>
+            <p>CSS3 is the latest version of the language for web presentation. It supports custom fonts and complex designs. Web pages not only look good, but can now dynamically adapt to different screen sizes.</p>
+        </div>
+        <div class='right'>
+            <img src='/assets/img/html5.jpg'>
+            <p>HTML5 is the latest standard for building web documents. The standard provides a rich media experience and seamless support for desktop, mobile and tablet devices.</p>
+        </div>
+    </article>
+</section>

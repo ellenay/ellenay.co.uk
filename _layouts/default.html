@@ -10,18 +10,27 @@
 </head>
 <body>
     <div class='container'>
-        <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-        <a class="extra" href="/">home</a>
+        <header>
+            <a href='/'><img src='/assets/img/logo.jpg' alt="{{site.name}}"></a>
+            <nav>
+                <ul>
+                    <li><a href="/blog" title="Contact">Blog <small>wise words</small></a></li>
+                    <li><a href="mailto:andrew@ellenay.co.uk" title="Contact">Contact <small>get in touch</small></a></li>
+                </ul>
+            </nav>
+        </header>
 
         {{ content }}
 
+        <!--
         <footer>
             <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
+                Ellenay<br />
+                studio@ellenay.co.uk
             </p>
         </footer>
+        -->
+
     </div>
 </body>
 </html>
