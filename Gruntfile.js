@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             },
             development: {
                 files: {
-                    "assets/css/all.min.css": "assets/css/style.less"
+                    "assets/dist/style.css": "assets/css/style.less"
                 }
             }
         },
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     'bower_components/jquery/jquery.min.js',
                     'assets/js/script.js'
                 ],
-                dest: 'assets/js/all.min.js'
+                dest: 'assets/dist/script.js'
             }
         },
         watch: {
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
         },
         uglify: {
             js: {
-                src: 'assets/js/all.min.js',
-                dest: 'assets/js/all.min.js'
+                src: 'assets/dist/script.js',
+                dest: 'assets/dist/script.js'
             }
         },
         cssmin: {
@@ -45,8 +45,8 @@ module.exports = function(grunt) {
                 keepSpecialComments: 0
             },
             css: {
-                src: 'assets/css/style.min.css',
-                dest: 'assets/css/style.min.css'
+                src: 'assets/dist/style.css',
+                dest: 'assets/dist/style.css'
             }
         }
     });
