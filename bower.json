@@ -1,0 +1,19 @@
+{
+  "name": "ellenay.co.uk",
+  "version": "0.0.0",
+  "homepage": "https://ellenay.co.uk",
+  "authors": [
+    "Andrew Cairns <andrew@acairns.co.uk>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
