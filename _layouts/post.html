@@ -3,16 +3,14 @@ layout: default
 ---
 
 <section id="title">
-    <h1>Blog</h1>
+    <h1>{{page.title}}</h1>
+    <p class="meta">{{ page.date | date_to_string }}</p>
 </section>
 
-<section id='main'>
+<section id='posts'>
     <article>
-        <h1>{{ page.title }}</h1>
-        <p class="meta">{{ page.date | date_to_string }}</p>
-
         <div class="post">
-        {{ content }}
+            {{ content }}
         </div>
     </article>
 </section>
