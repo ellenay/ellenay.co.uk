@@ -30,10 +30,17 @@ body {
         margin-bottom: 60px;
         padding: 0px;
 
-        &> header,
         &> section,
         &> footer {
             padding: 30px;
+        }
+
+        &> header {
+            padding: 30px 90px;
+
+            @media (max-width: @screen-sm-max) {
+                padding: 30px;
+            }
         }
     }
 }
@@ -98,6 +105,10 @@ header {
     padding-top: 80px;
     height: 270px;
     padding: 90px;
+
+    @media (max-width: @screen-sm-max) {
+        padding-left: 30px;
+    }
 
     h1 {
         .box-shadow( 0 0 12px rgba(0,0,0,0.3) );
@@ -200,6 +211,20 @@ header {
 
                 @media (min-width: @screen-md-min) {
                     width: 100px;
+                }
+            }
+        }
+
+        &.trusted {
+            
+            .items {
+                font-size: 0.1px;
+                text-align: center;
+
+                img {
+                    width: 18%;
+                    margin-right: 2%;
+                    max-width: 140px;
                 }
             }
         }
